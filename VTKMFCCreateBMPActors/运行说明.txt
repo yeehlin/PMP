@@ -1,0 +1,23 @@
+1、将一百张
+
+	001comp.bmp
+	...
+	100comp.bmp
+
+	图片直接放在D盘下
+
+2、菜单说明
+
+	Create Actors
+		Create BMP Actor:创建BMP Actor
+	Add Actors
+		Add BMP Actor:添加BMP Actor
+	Remove Actors
+		Remove BMP Actors:移除BMP Actor
+	Destroy Actors
+		Destroy Bmp Actor:销毁BMP Actor
+
+	Scan
+		Begin Scan:开始扫描磁盘
+		End Scan:结束扫描磁盘
+	

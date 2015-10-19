@@ -1,0 +1,65 @@
+
+SET( PROJECT_SRCS
+ChildFrm.cpp
+ChildFrm.h
+ClassView.cpp
+ClassView.h
+CMakeLists.txt
+FileView.cpp
+FileView.h
+MainFrm.cpp
+MainFrm.h
+OutputWnd.cpp
+OutputWnd.h
+PMPCall.cpp
+PMPCall.h
+PMPCall.rc
+PMPCall.sdf
+PMPCall.sln
+PMPCall.vcxproj
+PMPCall.vcxproj.filters
+PMPCall.vcxproj.user
+PMPCallDoc.cpp
+PMPCallDoc.h
+PMPCallView.cpp
+PMPCallView.h
+PropertiesWnd.cpp
+PropertiesWnd.h
+ReadMe.txt
+res
+Resource.h
+stdafx.cpp
+stdafx.h
+targetver.h
+UserImages.bmp
+ViewTree.cpp
+ViewTree.h
+
+ res/classview.bmp
+ res/classview_hc.bmp
+ res/class_view.ico
+ res/class_view_hc.ico
+ res/explorer.bmp
+ res/explorer_hc.bmp
+ res/fileview.bmp
+ res/fileview_hc.bmp
+ res/file_view.ico
+ res/file_view_hc.ico
+ res/menuimages.bmp
+ res/menuimages_hc.bmp
+ res/output_wnd.ico
+ res/output_wnd_hc.ico
+ res/PMPCall.ico
+ res/PMPCall.rc2
+ res/PMPCallDoc.ico
+ res/properties.bmp
+ res/properties_hc.bmp
+ res/properties_wnd.ico
+ res/properties_wnd_hc.ico
+ res/sort.bmp
+ res/sort_hc.bmp
+ res/Toolbar.bmp
+ res/Toolbar256.bmp
+	) 
+
+ADD_EXECUTABLE(PMPCall WIN32 ${PROJECT_SRCS} )
