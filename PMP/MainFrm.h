@@ -41,9 +41,9 @@ protected:  // control bar embedded members
 	CMFCStatusBar     m_wndStatusBar;
 	CMFCToolBarImages m_UserImages;
 	CFileView         m_wndFileView;
-	//CClassView        m_wndClassView;
+	CClassView        m_wndClassView;
 	COutputWnd        m_wndOutput;
-	//CPropertiesWnd    m_wndProperties;
+	CPropertiesWnd    m_wndProperties;
 
 // Generated message map functions
 protected:
