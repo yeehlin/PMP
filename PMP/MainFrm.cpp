@@ -199,6 +199,8 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 
 	// enable menu personalization (most-recently used commands)
 	// TODO: define your own basic commands, ensuring that each pulldown menu has at least one basic command.
+	// 菜单默认展开
+	/*
 	CList<UINT, UINT> lstBasicCommands;
 
 	lstBasicCommands.AddTail(ID_FILE_NEW);
@@ -225,6 +227,7 @@ int CMainFrame::OnCreate(LPCREATESTRUCT lpCreateStruct)
 	lstBasicCommands.AddTail(ID_SORTING_GROUPBYTYPE);
 
 	CMFCToolBar::SetBasicCommands(lstBasicCommands);
+	//*/
 
 	// Switch the order of document name and application name on the window title bar. This
 	// improves the usability of the taskbar because the document name is visible with the thumbnail.
