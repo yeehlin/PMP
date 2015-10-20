@@ -280,6 +280,8 @@ BOOL CMainFrame::CreateDockingWindows()
 	}
 
 	// Create properties window
+	//»•µÙ Ù–‘ ”Õº
+	/*
 	CString strPropertiesWnd;
 	bNameValid = strPropertiesWnd.LoadString(IDS_PROPERTIES_WND);
 	ASSERT(bNameValid);
@@ -288,7 +290,7 @@ BOOL CMainFrame::CreateDockingWindows()
 		TRACE0("Failed to create Properties window\n");
 		return FALSE; // failed to create
 	}
-
+	//*/
 	SetDockingWindowIcons(theApp.m_bHiColorIcons);
 	return TRUE;
 }
@@ -303,10 +305,10 @@ void CMainFrame::SetDockingWindowIcons(BOOL bHiColorIcons)
 	//*/
 	HICON hOutputBarIcon = (HICON) ::LoadImage(::AfxGetResourceHandle(), MAKEINTRESOURCE(bHiColorIcons ? IDI_OUTPUT_WND_HC : IDI_OUTPUT_WND), IMAGE_ICON, ::GetSystemMetrics(SM_CXSMICON), ::GetSystemMetrics(SM_CYSMICON), 0);
 	m_wndOutput.SetIcon(hOutputBarIcon, FALSE);
-
+	/*
 	HICON hPropertiesBarIcon = (HICON) ::LoadImage(::AfxGetResourceHandle(), MAKEINTRESOURCE(bHiColorIcons ? IDI_PROPERTIES_WND_HC : IDI_PROPERTIES_WND), IMAGE_ICON, ::GetSystemMetrics(SM_CXSMICON), ::GetSystemMetrics(SM_CYSMICON), 0);
 	m_wndProperties.SetIcon(hPropertiesBarIcon, FALSE);
-
+	//*/
 	UpdateMDITabbedBarsIcons();
 }
 
