@@ -44,6 +44,7 @@ BEGIN_MESSAGE_MAP(CPMPView, CView)
 	ON_COMMAND(ID_BUTTON_RESUME_256, &CPMPView::OnButtonResume256)
 	ON_COMMAND(ID_BUTTON_STOP_256, &CPMPView::OnButtonStop256)
 	ON_WM_CLOSE()
+	ON_COMMAND(ID_TOOLS_PATTERNRECOGNITION, &CPMPView::OnToolsPatternrecognition)
 END_MESSAGE_MAP()
 
 // CPMPView construction/destruction
@@ -64,6 +65,7 @@ CPMPView::CPMPView()
 	// 指针初始化
 	m_pSpinodalpc = NULL;
 	m_pPiezopc = NULL;
+	m_pPaternRecpc = NULL;
 	// 给出默认的工作目录
 	workdirectory = "F:\\PMPWorkspace";
 	// 从MainFrame中得到工作空间路径
@@ -92,6 +94,10 @@ CPMPView::~CPMPView()
 	if (m_pPiezopc != NULL)
 	{
 		m_pPiezopc->PMPTerminateProcess();
+	}
+	if (m_pPaternRecpc != NULL)
+	{
+		m_pPaternRecpc->PMPTerminateProcess();
 	}
 }
 
@@ -653,6 +659,10 @@ void CPMPView::OnClose()
 	{
 		m_pPiezopc->PMPTerminateProcess();
 	}
+	if (m_pPaternRecpc != NULL)
+	{
+		m_pPaternRecpc->PMPTerminateProcess();
+	}
 
 	CView::OnClose();
 }
@@ -770,4 +780,17 @@ BOOL CPMPView::EnviornmentConfig(int moduleType){
 		break;
 	}
 	return TRUE;
+}
+
+void CPMPView::OnToolsPatternrecognition()
+{
+	// TODO: Add your command handler code here
+	// 启动模式识别模块，对图片进行分割，分割结果以文本文件输出
+	CString cmdline = ".\\mpatternReco\\MPatRecFace.exe";
+	CString moduleWorkDirectory = ".\\mpatternReco";
+	if (m_pPaternRecpc == NULL)
+	{
+		m_pPaternRecpc = new CProcessCreater();
+	}
+	m_pPaternRecpc->PMPCreateProcess(cmdline,moduleWorkDirectory,SW_SHOW);
 }
