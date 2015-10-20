@@ -52,7 +52,12 @@ BOOL CPMPDoc::OnNewDocument()
 
 	// TODO: add reinitialization code here
 	// (SDI documents will reuse this document)
-
+	// 模式识别菜单的图片
+	m_pBtimapPatrec.LoadBitmap(IDB_BITMAP_PATREC);
+	CMenu *pMenu;
+	pMenu = CMenu::FromHandle(((CMultiDocTemplate *)m_pDocTemplate)->m_hMenuShared);
+	CMenu *pSubMenu = pMenu->GetSubMenu(1);
+	pSubMenu->SetMenuItemBitmaps(0,MF_BYPOSITION, &m_pBtimapPatrec, &m_pBtimapPatrec);
 	return TRUE;
 }
 

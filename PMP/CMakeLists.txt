@@ -213,6 +213,7 @@ res/sort.bmp
 res/sort_hc.bmp
 res/Toolbar.bmp
 res/Toolbar256.bmp
+res/100comp.bmp
 	) 
 #----------------------------------------------------------------------------------
 

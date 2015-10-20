@@ -20,6 +20,7 @@ protected: // create from serialization only
 
 // Attributes
 public:
+	CBitmap m_pBtimapPatrec;
 
 // Operations
 public:
