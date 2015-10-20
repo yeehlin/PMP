@@ -45,6 +45,7 @@ BEGIN_MESSAGE_MAP(CPMPView, CView)
 	ON_COMMAND(ID_BUTTON_STOP_256, &CPMPView::OnButtonStop256)
 	ON_WM_CLOSE()
 	ON_COMMAND(ID_TOOLS_PATTERNRECOGNITION, &CPMPView::OnToolsPatternrecognition)
+	ON_COMMAND(ID_PHASEMODELING_JOBCONTROL, &CPMPView::OnPhasemodelingJobcontrol)
 END_MESSAGE_MAP()
 
 // CPMPView construction/destruction
@@ -58,6 +59,7 @@ CPMPView::CPMPView()
 	//*************初始化对话框指针************
 	this->m_pcalculateDlgFather = NULL;
 	this->m_pelectricModelingDLGFather = NULL;
+	this->m_pCJobControlDlg = NULL;
 	// 设置运行模块标识
 	this->m_CurrentMoldule = 0;
 	flagsize =0;
@@ -793,4 +795,16 @@ void CPMPView::OnToolsPatternrecognition()
 		m_pPaternRecpc = new CProcessCreater();
 	}
 	m_pPaternRecpc->PMPCreateProcess(cmdline,moduleWorkDirectory,SW_SHOW);
+}
+
+
+void CPMPView::OnPhasemodelingJobcontrol()
+{
+	// TODO: Add your command handler code here
+	if (m_pCJobControlDlg == NULL){
+		this->m_pCJobControlDlg = new PMPDlgJobs();
+	}
+	if(this->m_pCJobControlDlg->DoModal()==IDOK){
+
+	}
 }

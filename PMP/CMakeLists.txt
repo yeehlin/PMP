@@ -181,6 +181,9 @@ PointsColorDlg.cpp
 PointsColorDlg.h
 ScaleFactorDlg.cpp
 ScaleFactorDlg.h
+PMPDlgJobs.cpp
+PMPDlgJobs.h
+PMPSocket.h
 
 #bin/spin/input.dat
 #bin/spin/spinodal01.exe
