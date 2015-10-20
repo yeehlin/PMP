@@ -9,6 +9,7 @@
 
 #include "CalculateDlgFather.h"
 #include "ElectricModelingDLGFather.h"
+#include "PMPDlgJobs.h"
 
 #include "ProcessCreater.h"
 
@@ -72,6 +73,7 @@ public :
 	//***************对话框******************//
 	CalculateDlgFather *m_pcalculateDlgFather;
 	ElectricModelingDLGFather * m_pelectricModelingDLGFather;
+	PMPDlgJobs * m_pCJobControlDlg;
 	// 当前运行的模块标识,0表示没有模块运行
 	int m_CurrentMoldule;
 
@@ -92,12 +94,16 @@ public :
 	// 掌管两个进程
 	CProcessCreater  * m_pSpinodalpc;
 	CProcessCreater * m_pPiezopc;
+	// 模式识别对话框
+	CProcessCreater * m_pPaternRecpc;
 	// 工作目录
 	CString workdirectory;
 	// 创建目录
 	BOOL MakeDir(CString szDirName);
 	// 环境配置-负责与模块对应的目录，拷贝模块运行时需要的文件到模块工作目录
 	BOOL EnviornmentConfig(int moduleType);
+	afx_msg void OnToolsPatternrecognition();
+	afx_msg void OnPhasemodelingJobcontrol();
 };
 
 #ifndef _DEBUG  // debug version in PMPView.cpp

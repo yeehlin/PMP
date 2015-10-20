@@ -4,7 +4,9 @@
 #include "ClassView.h"
 #include "Resource.h"
 #include "PMP.h"
-
+/*
+设计和修改类视图菜单栏按钮
+*/
 class CClassViewMenuButton : public CMFCToolBarMenuButton
 {
 	friend class CClassView;

@@ -181,6 +181,9 @@ PointsColorDlg.cpp
 PointsColorDlg.h
 ScaleFactorDlg.cpp
 ScaleFactorDlg.h
+PMPDlgJobs.cpp
+PMPDlgJobs.h
+PMPSocket.h
 
 #bin/spin/input.dat
 #bin/spin/spinodal01.exe
@@ -213,6 +216,7 @@ res/sort.bmp
 res/sort_hc.bmp
 res/Toolbar.bmp
 res/Toolbar256.bmp
+res/100comp.bmp
 	) 
 #----------------------------------------------------------------------------------
 
