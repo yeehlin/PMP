@@ -6,7 +6,11 @@
 #include "CalculateDlgChild1.h"
 #include "afxdialogex.h"
 
-
+/*
+ * 作者：zs
+ * 功能：对话框
+ * 日期：2015年10月22日
+ */
 // CalculateDlgChild1 dialog
 
 IMPLEMENT_DYNAMIC(CalculateDlgChild1, CDialog)
