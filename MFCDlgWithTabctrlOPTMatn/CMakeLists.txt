@@ -106,9 +106,9 @@ ElectricModelingDLGSharedData.cpp
 ElectricModelingDLGSharedData.h
 
 
-bin/piez/pieze.exe
-bin/piez/parameter.in
-bin/piez/struct.in
+#bin/piez/pieze.exe
+#bin/piez/parameter.in
+#bin/piez/struct.in
 
 res/classview.bmp
 res/classview_hc.bmp

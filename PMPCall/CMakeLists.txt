@@ -14,11 +14,11 @@ OutputWnd.h
 PMPCall.cpp
 PMPCall.h
 PMPCall.rc
-PMPCall.sdf
-PMPCall.sln
-PMPCall.vcxproj
-PMPCall.vcxproj.filters
-PMPCall.vcxproj.user
+#PMPCall.sdf
+#PMPCall.sln
+#PMPCall.vcxproj
+#PMPCall.vcxproj.filters
+#PMPCall.vcxproj.user
 PMPCallDoc.cpp
 PMPCallDoc.h
 PMPCallView.cpp
@@ -26,7 +26,7 @@ PMPCallView.h
 PropertiesWnd.cpp
 PropertiesWnd.h
 ReadMe.txt
-res
+#res
 Resource.h
 stdafx.cpp
 stdafx.h

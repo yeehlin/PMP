@@ -53,8 +53,8 @@ ViewTree.h
 PMPDlgJobs.cpp
 PMPDlgJobs.h
 PMPSocket.h
-parameter.in
-struct.in
+#parameter.in
+#struct.in
 
 res/classview.bmp
 res/classview_hc.bmp

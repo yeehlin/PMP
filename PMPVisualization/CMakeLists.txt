@@ -9,13 +9,13 @@ endif(VTK_FOUND)
 
 SET( PROJECT_SRCS
 CMakeLists.txt
-eleField.00000000.dat
-elePlrz.00000000.dat
+#eleField.00000000.dat
+#elePlrz.00000000.dat
 pmptransformation.cpp
 pmpvisualization.cxx
-strain.00000000.dat
-stress.00000000.dat
-struct.in
+#strain.00000000.dat
+#stress.00000000.dat
+#struct.in
 )
 
 include(${VTK_USE_FILE})

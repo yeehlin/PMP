@@ -79,11 +79,11 @@ VTKMFCCreateBMPActorsDoc.h
 VTKMFCCreateBMPActorsView.cpp
 VTKMFCCreateBMPActorsView.h
 
-bin/spin/input.dat
-bin/spin/spinodal01.exe
-bin/piez/pieze.exe
-bin/piez/parameter.in
-bin/piez/struct.in
+#bin/spin/input.dat
+#bin/spin/spinodal01.exe
+#bin/piez/pieze.exe
+#bin/piez/parameter.in
+#bin/piez/struct.in
 
 res/classview.bmp
 res/classview_hc.bmp
