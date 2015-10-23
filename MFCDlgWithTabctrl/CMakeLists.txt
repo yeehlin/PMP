@@ -41,8 +41,8 @@ IsosurfaceDlg.h
 PointsColorDlg.cpp
 PointsColorDlg.h
 
-bin/spin/input.dat
-bin/spin/spinodal01.exe
+#bin/spin/input.dat
+#bin/spin/spinodal01.exe
 
 res/classview.bmp
 res/classview_hc.bmp
