@@ -36,7 +36,8 @@ END_MESSAGE_MAP()
 CPMPWindowsClientMFCView::CPMPWindowsClientMFCView()
 {
 	// TODO: add construction code here
-		ppmpDlgJobs = NULL;
+	ppmpDlgJobs = NULL;
+	pNETPMP = NULL;
 
 }
 
@@ -44,6 +45,9 @@ CPMPWindowsClientMFCView::~CPMPWindowsClientMFCView()
 {
 	if (ppmpDlgJobs != NULL){
 		delete ppmpDlgJobs;
+	}
+	if (pNETPMP != NULL){
+		delete pNETPMP;
 	}
 }
 
@@ -135,10 +139,37 @@ CPMPWindowsClientMFCDoc* CPMPWindowsClientMFCView::GetDocument() const // non-de
 void CPMPWindowsClientMFCView::OnPhasemodelingCalculate()
 {
 	// TODO: Add your command handler code here
+	/*
+	// 模态对话框
 	if (this->ppmpDlgJobs == NULL){
 		ppmpDlgJobs = new PMPDlgJobs();
 	}
 	if (ppmpDlgJobs->DoModal() == IDOK){
-
+	
 	}
+	//*/
+
+	/*
+	// 非模态对话框
+	if (this->ppmpDlgJobs == NULL){
+		ppmpDlgJobs = new PMPDlgJobs();
+		ppmpDlgJobs->Create(PMPDlgJobs::IDD,this);
+		ppmpDlgJobs->ShowWindow(SW_SHOW);
+	}else if (!(ppmpDlgJobs->IsWindowVisible()))
+	{
+		ppmpDlgJobs->ShowWindow(SW_SHOW);
+	}
+	//*/
+
+	//*
+	// 非模态对话框
+	if (this->pNETPMP == NULL){
+		pNETPMP = new NETPMP();
+		pNETPMP->Create(NETPMP::IDD);
+		pNETPMP->ShowWindow(SW_SHOW);
+	}else if (!(pNETPMP->IsWindowVisible()))
+	{
+		pNETPMP->ShowWindow(SW_SHOW);
+	}
+	//*/
 }

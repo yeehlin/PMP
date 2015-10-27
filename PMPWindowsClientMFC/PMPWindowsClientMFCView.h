@@ -5,6 +5,7 @@
 #pragma once
 
 #include "PMPDlgJobs.h"
+#include "NETPMP.h"
 
 class CPMPWindowsClientMFCView : public CView
 {
@@ -47,6 +48,7 @@ protected:
 public:
 	afx_msg void OnPhasemodelingCalculate();
 	PMPDlgJobs * ppmpDlgJobs;
+	NETPMP * pNETPMP;
 };
 
 #ifndef _DEBUG  // debug version in PMPWindowsClientMFCView.cpp

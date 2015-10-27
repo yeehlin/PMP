@@ -53,8 +53,14 @@ ViewTree.h
 PMPDlgJobs.cpp
 PMPDlgJobs.h
 PMPSocket.h
+NETPMP.cpp
+NETPMP.h
+PMPServers.h
+PMPServers.cpp
+
 #parameter.in
 #struct.in
+
 
 res/classview.bmp
 res/classview_hc.bmp

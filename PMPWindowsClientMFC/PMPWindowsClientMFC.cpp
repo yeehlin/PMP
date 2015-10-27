@@ -73,7 +73,6 @@ BOOL CPMPWindowsClientMFCApp::InitInstance()
 
 	CWinAppEx::InitInstance();
 
-
 	// Initialize OLE libraries
 	if (!AfxOleInit())
 	{
